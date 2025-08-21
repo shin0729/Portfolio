@@ -28,21 +28,27 @@
 
 .social-icon:hover {
     transform: translateY(-3px);
+    color: #666; /* デフォルト色を保持 */
 }
 
 /* GitHubアイコンのホバー時 */
-.social-icon:hover .fa-github {
+.social-icon:hover i.fa-github {
     color: #24292e;
 }
 
 /* Twitterアイコンのホバー時 */
-.social-icon:hover .fa-twitter {
+.social-icon:hover i.fa-twitter {
     color: #1da1f2;
 }
 
 /* メールアイコンのホバー時 */
-.social-icon:hover .fa-envelope {
+.social-icon:hover i.fa-envelope {
     color: #ea4335;
+}
+
+/* アイコン自体の色も親要素から継承 */
+.social-icon i {
+    color: inherit;
 }
 
 /* メインコンテナの調整 */
